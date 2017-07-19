@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title> DIY Google Doodle </title>
+</head>
+
+<body>
+
+<div class = "wrapper" style = "text-align: center">
+<!--buttons to change colors-->
+<button id = "blackButton" onclick = "showColorSelect('blackButton'); setColor('black')" > <img src ="Images/black.png" width = "28" height = "28" /> </button>
+<button id = "blueButton" onclick = "showColorSelect('blueButton'); setColor('blue')" > <img src ="Images/blue.png" width = "28" height = "28" /> </button>
+<button id = "redButton" onclick = "showColorSelect('redButton'); setColor('red')" > <img src ="Images/red.png" width = "28" height = "28" /> </button>
+<button id = "greenButton" onclick = "showColorSelect('greenButton'); setColor('green')"> <img src ="Images/green.png" width = "28" height = "28" /> </button>
+<button id = "yellowButton" onclick = "showColorSelect('yellowButton'); setColor('yellow')"> <img src ="Images/yellow.png" width = "28" height = "28" /> </button>  
+
+<!--buttons to change size-->
+<button id = "largeButton" onclick = "showSizeSelect('largeButton'); setSize(15)"> <img src ="Images/large.png" width = "28" height = "28" /> </button> 
+<button id = "mediumButton" onclick = "showSizeSelect('mediumButton'); setSize(10)"> <img src ="Images/medium.png" width = "28" height = "28" /> </button> 
+<button id = "smallButton" onclick = "showSizeSelect('smallButton'); setSize(5)"> <img src ="Images/small.png" width = "28" height = "28" /> </button>
+
+<!--drawing tools-->
+<button id = "marker" onclick = "showToolSelect('marker'); setMarkerPattern()" > <img src ="Images/marker.png" width = "28" height = "28" /> </button>
+<button id = "paintBrush" onclick = "showToolSelect('paintBrush'); setPaintBrushPattern()" > <img src ="Images/paintBrush.png" width = "28" height = "28" /> </button>
+<button id = "sprayCan" onclick = "showToolSelect('sprayCan'); setSprayPattern()" > <img src ="Images/sprayCan.png" width = "28" height = "28" /> </button>
+
+<!--special tools-->
+<button id = "paintBucket" onclick = "showPaintBucketSelect()" > <img src ="Images/paintBucket.png" width = "28" height = "28" /> </button>
+<button id = "eraser" onclick = "showEraserSelect()" > <img src ="Images/eraser.png" width = "28" height = "28" /> </button>
+<button id = "refresh" onclick = "showRefreshSelect()" > <img src ="Images/refresh.png" width = "28" height = "28" /> </button> <br/>
+</div>
+
+<!--canvas to draw on. size of canvas was chosen based on size of google homepage screenshot-->
+<canvas id = "myCanvas" width = "1366px" height = "547px" style="text-align: center"> </canvas>
+
+<script src = "script.js"> </script>
+
+</body>
+</html>
