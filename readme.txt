@@ -1,7 +1,7 @@
 Users can draw their own Google doodle.
 
 The page features:
-Screenshot of google logo.
+Screenshot of Google logo.
 Drawing tools: marker, paint brush, and spray can
 Sizes of drawing tools: large, medium, small
 Colors: black, blue, red, green, and yellow
